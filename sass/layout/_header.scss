@@ -1,0 +1,45 @@
+.header {
+  border-bottom: 1px solid #ececec;
+
+  &-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &-logo {
+    color: #000000;
+  }
+}
+
+.conect {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.conect-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+
+  color: var(--text-color);
+
+  transition: color 250ms var(--animation-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--bcg-focus-btn-color);
+  }
+
+  &-icon-convert,
+  &-icon-smartphone {
+    fill: currentColor;
+  }
+}

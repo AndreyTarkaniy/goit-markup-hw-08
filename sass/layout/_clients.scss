@@ -1,0 +1,35 @@
+.clients {
+  @include section(94px, 94px);
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  &-icon {
+    fill: currentColor;
+  }
+}
+
+.clients-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+
+  background-color: var(--hero-btntext-color);
+  color: var(--icon-color);
+
+  transition: border-color 250ms var(--animation-timing-function), color 250ms var(--animation-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--bcg-focus-btn-color);
+    border-color: var(--bcg-focus-btn-color);
+  }
+}

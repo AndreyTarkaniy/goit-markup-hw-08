@@ -1,0 +1,44 @@
+.featur {
+  @include section(94px, 94px);
+
+  padding-bottom: 0px;
+}
+
+.features {
+  display: flex;
+  gap: 30px;
+
+  &-item {
+    width: calc((100% - 30px * 3) / 4);
+  }
+
+  &-item-icon {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+    background-color: var(--bcg-nofocus-btn);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &-title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+  }
+
+  &-text {
+    color: var(--text-color);
+
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+  }
+}
