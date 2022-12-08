@@ -1,11 +1,12 @@
 .team {
-  @include section(94px, 94px);
+  @include section(60px, 60px);
 
   background-color: var(--bcg-nofocus-btn);
 }
 
 .teams {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 
   &-item {

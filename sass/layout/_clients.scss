@@ -1,35 +1,57 @@
 .clients {
-  @include section(94px, 94px);
+  @include section(60px, 60px);
 }
 .clients-list {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
 
   &-icon {
     fill: currentColor;
   }
-}
 
-.clients-list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  width: 170px;
-  height: 92px;
-  border: 1px solid var(--icon-color);
-  border-radius: 4px;
+    width: 210px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
 
-  background-color: var(--hero-btntext-color);
-  color: var(--icon-color);
+    background-color: var(--hero-btntext-color);
+    color: var(--icon-color);
 
-  transition: border-color 250ms var(--animation-timing-function), color 250ms var(--animation-timing-function);
+    transition: border-color 250ms var(--animation-timing-function), color 250ms var(--animation-timing-function);
 
-  &:hover,
-  &:focus {
-    color: var(--bcg-focus-btn-color);
-    border-color: var(--bcg-focus-btn-color);
+    &:hover,
+    &:focus {
+      color: var(--bcg-focus-btn-color);
+      border-color: var(--bcg-focus-btn-color);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &-link {
+      width: 226px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include section(94px, 94px);
+
+    &-link {
+      width: 170px;
+    }
+
+    .section-title {
+      margin-bottom: 50px;
+
+      font-size: 36px;
+      line-height: calc(42 / 36);
+    }
   }
 }

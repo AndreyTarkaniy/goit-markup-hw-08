@@ -141,9 +141,9 @@ p {
 }
 
 .section-title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -458,8 +458,8 @@ p {
 }
 
 .featur {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   padding-bottom: 0px;
 }
 
@@ -512,6 +512,10 @@ p {
   }
 }
 @media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .features-item {
     width: calc((100% - 90px) / 4);
   }
@@ -560,8 +564,8 @@ p {
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--bcg-nofocus-btn);
 }
 
@@ -569,6 +573,8 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
 }
 .teams-item {
@@ -637,8 +643,8 @@ p {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .clients-list {
@@ -651,12 +657,13 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
 }
 .clients-list-icon {
   fill: currentColor;
 }
-
 .clients-list-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -667,7 +674,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
@@ -679,6 +686,25 @@ p {
 .clients-list-link:hover, .clients-list-link:focus {
   color: var(--bcg-focus-btn-color);
   border-color: var(--bcg-focus-btn-color);
+}
+@media screen and (min-width: 768px) {
+  .clients-list-link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .clients-list-link {
+    width: 170px;
+  }
+  .clients-list .section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
 }
 
 .footer {
