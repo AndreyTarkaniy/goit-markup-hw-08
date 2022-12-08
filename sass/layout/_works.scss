@@ -1,4 +1,5 @@
 .work {
+  display: none;
   @include section(94px, 94px);
 
   &_title {
@@ -9,32 +10,36 @@
 
     color: var(--hero-btntext-color);
   }
-}
 
-.works {
-  display: flex;
-  gap: 30px;
-
-  &_item {
-    position: relative;
-  }
-
-  &_content {
-    position: absolute;
-
-    bottom: 0;
-    left: 0;
-
+  .works {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 370px;
-    height: 70px;
+    gap: 30px;
 
-    background-color: rgba(47, 48, 58, 0.8);
+    &_item {
+      position: relative;
+    }
+
+    &_content {
+      position: absolute;
+
+      bottom: 0;
+      left: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 370px;
+      height: 70px;
+
+      background-color: rgba(47, 48, 58, 0.8);
+    }
+
+    &_item {
+      position: relative;
+    }
   }
 
-  &_item {
-    position: relative;
+  @media screen and (min-width: 1200px) {
+    display: block;
   }
 }

@@ -5,4 +5,9 @@
   letter-spacing: 0.03em;
 
   color: var(--bcg-focus-btn-color);
+
+  &_footer {
+    display: block;
+    text-align: center;
+  }
 }

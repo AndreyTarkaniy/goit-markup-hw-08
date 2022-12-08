@@ -7,12 +7,13 @@
 
   &-container {
     display: flex;
-    justify-content: left;
-    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
   }
 
   &-contacts {
-    margin-right: 70px;
     min-width: 231px;
   }
 
@@ -22,6 +23,7 @@
 }
 
 .address {
+  text-align: center;
   margin-top: 20px;
 }
 
@@ -59,9 +61,9 @@
 
 // footer-social
 .footer-social {
-  margin-right: 93px;
-
   &-title {
+    text-align: center;
+
     margin-bottom: 20px;
 
     font-size: 14px;
@@ -108,6 +110,8 @@
 
 .footer-form {
   &-title {
+    text-align: center;
+
     margin-bottom: 20px;
 
     font-size: 14px;
@@ -120,7 +124,11 @@
 
   &-input {
     display: flex;
-    gap: 12px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
 }
 
@@ -186,5 +194,50 @@
   .footer-form-btn-field:hover + &,
   .footer-form-btn-field:focus + & {
     fill: var(--bcg-focus-btn-color);
+  }
+}
+
+@media screen and(min-width:768px) {
+  &-contacts {
+    margin-right: 165px;
+  }
+
+  &-form-input {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  &-container {
+    align-items: baseline;
+    gap: 0;
+  }
+
+  .logo_footer {
+    display: inline;
+  }
+
+  .address {
+    text-align: left;
+  }
+  &-contacts {
+    margin-right: 70px;
+  }
+
+  &-social {
+    margin-right: 93px;
+  }
+
+  &-social-title {
+    text-align: left;
+  }
+
+  &-form-title {
+    text-align: left;
+  }
+
+  &-form-input {
+    flex-direction: row;
+    gap: 12px;
   }
 }
