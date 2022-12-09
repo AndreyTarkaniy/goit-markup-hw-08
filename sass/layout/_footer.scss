@@ -6,15 +6,17 @@
   background-color: #2f303a;
 
   &-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+  }
+
+  &-tablet {
+    margin-bottom: 60px;
   }
 
   &-contacts {
-    min-width: 231px;
+    margin-bottom: 60px;
   }
 
   &-logo {
@@ -107,7 +109,6 @@
 }
 
 // footer-form
-
 .footer-form {
   &-title {
     text-align: center;
@@ -133,7 +134,7 @@
 }
 
 .mail-field {
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding-left: 16px;
   padding-top: 15px;
@@ -197,22 +198,27 @@
   }
 }
 
-@media screen and(min-width:768px) {
-  &-contacts {
-    margin-right: 165px;
+@media screen and (min-width: 768px) {
+  .footer-tablet {
+    display: flex;
+    justify-content: space-around;
   }
-
-  &-form-input {
-    flex-direction: column;
+  .footer-contacts {
+    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  &-container {
+  .footer-container {
+    display: flex;
     align-items: baseline;
     gap: 0;
   }
-
+  .footer-tablet {
+    justify-content: left;
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
   .logo_footer {
     display: inline;
   }
@@ -220,24 +226,22 @@
   .address {
     text-align: left;
   }
-  &-contacts {
+  .footer-contacts {
     margin-right: 70px;
+    margin-bottom: 0;
   }
 
-  &-social {
-    margin-right: 93px;
-  }
-
-  &-social-title {
+  .footer-social-title,
+  .footer-form-title {
     text-align: left;
   }
 
-  &-form-title {
-    text-align: left;
-  }
-
-  &-form-input {
+  .footer-form-input {
     flex-direction: row;
     gap: 12px;
+  }
+
+  .mail-field {
+    width: 358px;
   }
 }

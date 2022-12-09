@@ -1,17 +1,14 @@
 // utils
-
 @import "./utils/utils";
 @import "./utils/visually-hidden";
 @import "./utils/mixins";
 @import "./utils/placeholder";
 
 // base
-
 @import "./base/base";
 @import "./base/reset";
 
 // components
-
 @import "./components/container";
 @import "./components/logo";
 @import "./components/nav";
@@ -23,7 +20,6 @@
 @import "./components/checkbox";
 
 // layout
-
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/featur";
