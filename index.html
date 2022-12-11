@@ -28,10 +28,10 @@
   <body>
     <!-- header -->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class="header-container container">
+        <a class="logo link" href="./index.html" lang="en">Web<span class="header-logo">Studio</span></a>
         <nav class="nav">
-          <a class="logo link" href="./index.html" lang="en">Web<span class="header-logo">Studio</span></a>
           <ul class="nav-site list">
             <li class="nav-site-item">
               <a class="nav-site-link current link" href="./index.html">Студія</a>
@@ -47,7 +47,7 @@
           </ul>
         </nav>
         <ul class="conect list">
-          <li>
+          <li class="conect-item">
             <a class="conect-link link" href="mailto:info@devstudio.com">
               <svg class="conect-link-icon-convert" width="16" height="12">
                 <use href="./images/icons.svg#icon-convert"></use>
@@ -56,7 +56,7 @@
             </a>
           </li>
 
-          <li>
+          <li class="conect-item">
             <a class="conect-link link" href="tel:+380961111111">
               <svg class="conect-link-icon-smartphone" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
@@ -65,8 +65,68 @@
             </a>
           </li>
         </ul>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-burger" width="40" height="40">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+
+        <!-- mobile menu -->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg class="menu-close" width="40" height="40">
+              <use href="./images/icons.svg#icon-menuclose"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link current link" href="./index.html">Студія</a>
+            </li>
+
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="./portfolio.html">Портфоліо</a>
+            </li>
+
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="">Контакти</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-contacts list">
+            <li class="mobile-contacts-items">
+              <a class="mobile-contacts-link mobile-contacts-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+
+            <li class="mobile-contacts-items">
+              <a class="mobile-contacts-link mobile-contacts-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-social list">
+            <li class="mobile-social-items">
+              <a class="mobile-social-link link" href="">Instagram</a>
+            </li>
+
+            <li class="mobile-social-items">
+              <a class="mobile-social-link link" href="">Twitter</a>
+            </li>
+
+            <li class="mobile-social-items">
+              <a class="mobile-social-link link" href="">Facebook</a>
+            </li>
+
+            <li class="mobile-social-items">
+              <a class="mobile-social-link link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <svg class="" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg> -->
       </div>
-    </header> -->
+    </header>
 
     <!-- main -->
     <main>
@@ -469,7 +529,7 @@
 
     <!-- footer -->
     <footer class="footer">
-      <div class="footer-container">
+      <div class="footer-container container">
         <div class="footer-tablet">
           <div class="footer-contacts">
             <a class="logo logo_footer link" href="./index.html" lang="en">Web<span class="footer-logo">Studio</span></a>
@@ -532,6 +592,7 @@
         </div>
 
         <!-- footer form -->
+
         <form class="footer-form">
           <h2 class="footer-form-title">Підпишіться на розсилку</h2>
 
@@ -558,7 +619,7 @@
           </svg>
         </button> -->
 
-    <!-- vodal-form -->
+    <!-- modal-form -->
     <!-- <strong class="modal-title title">Залиште свої дані, ми вам передзвонимо</strong>
         <form class="modal-form" name="modal_form">
           <div class="modal-group" role="group">
@@ -606,5 +667,12 @@
     </div> -->
 
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
