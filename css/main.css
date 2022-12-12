@@ -1091,9 +1091,6 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 20px;
 }
 
@@ -1169,6 +1166,8 @@ p {
 
 .footer-form-btn {
   position: relative;
+  width: 200px;
+  margin: 0 auto;
 }
 
 .footer-form-btn-field {
