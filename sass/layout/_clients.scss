@@ -1,5 +1,16 @@
 .clients {
   @include section(60px, 60px);
+
+  @media screen and (min-width: 1200px) {
+    @include section(94px, 94px);
+
+    .section-title {
+      margin-bottom: 50px;
+
+      font-size: 36px;
+      line-height: calc(42 / 36);
+    }
+  }
 }
 .clients-list {
   display: flex;
@@ -17,7 +28,6 @@
     justify-content: center;
     align-items: center;
 
-    width: 210px;
     height: 92px;
     border: 1px solid var(--icon-color);
     border-radius: 4px;
@@ -34,6 +44,12 @@
     }
   }
 
+  @media screen and (min-width: 480px) {
+    &-link {
+      width: 210px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     &-link {
       width: 226px;
@@ -41,17 +57,8 @@
   }
 
   @media screen and (min-width: 1200px) {
-    @include section(94px, 94px);
-
     &-link {
       width: 170px;
-    }
-
-    .section-title {
-      margin-bottom: 50px;
-
-      font-size: 36px;
-      line-height: calc(42 / 36);
     }
   }
 }

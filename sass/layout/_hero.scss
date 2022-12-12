@@ -7,8 +7,9 @@
   background-color: #2f303a;
 
   max-width: 1600px;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 
   // mobile
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_bg_m@1x.jpg);
@@ -46,8 +47,7 @@
     background-color: var(--hero-btntext-color);
   }
 
-  // tablet
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 480px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_bg_t@1x.jpg);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -55,15 +55,20 @@
     }
   }
 
-  // desktop
-  @media screen and (min-width: 769px) {
+  // tablet
+  @media screen and (min-width: 768px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_bg_d@1x.jpg);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_bg_d@2x.jpg);
     }
+
+    &_title {
+      width: 360px;
+    }
   }
 
+  // desktop
   @media screen and(min-width:1200px) {
     & {
       padding: 200px 0;

@@ -2,6 +2,14 @@
   @include section(60px, 60px);
 
   padding-bottom: 0px;
+
+  @media screen and (min-width: 1200px) {
+    @include section(94px, 94px);
+
+    &-item {
+      width: calc((100% - 30px * 3) / 4);
+    }
+  }
 }
 
 .features {
@@ -50,14 +58,6 @@
 
     &-title {
       text-align: left;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    @include section(94px, 94px);
-
-    &-item {
-      width: calc((100% - 30px * 3) / 4);
     }
   }
 }
