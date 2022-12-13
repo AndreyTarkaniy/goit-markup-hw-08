@@ -1364,6 +1364,9 @@ p {
 .projects-item {
   -webkit-box-shadow: none;
           box-shadow: none;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   -webkit-transition: -webkit-box-shadow 250ms var(--animation-timing-function);
   transition: -webkit-box-shadow 250ms var(--animation-timing-function);
   transition: box-shadow 250ms var(--animation-timing-function);
@@ -1404,8 +1407,8 @@ p {
   height: 100%;
   top: 0;
   left: 0;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transition: -webkit-transform 250ms var(--animation-timing-function);
   transition: -webkit-transform 250ms var(--animation-timing-function);
@@ -1443,9 +1446,6 @@ p {
 
 .projects-thumb {
   padding: 20px 24px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
 }
 .projects-thumb-title {
   margin-bottom: 4px;
