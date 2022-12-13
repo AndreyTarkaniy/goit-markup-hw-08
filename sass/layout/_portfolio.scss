@@ -1,5 +1,9 @@
 .portfolio {
-  @include section(94px, 94px);
+  @include section(60px, 60px);
+
+  @media screen and (min-width: 1200px) {
+    @include section(94px, 94px);
+  }
 }
 
 // filter-button
