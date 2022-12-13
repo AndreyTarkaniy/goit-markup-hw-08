@@ -1420,9 +1420,9 @@ p {
           transform: translateY(0);
 }
 .projects-overlay .projects-overlay-text {
-  padding: 30px 24px;
+  padding: 38px 24px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5555555556;
   letter-spacing: 0.03em;
   color: var(--hero-btntext-color);
@@ -1435,7 +1435,7 @@ p {
 }
 @media screen and (min-width: 768px) {
   .projects-overlay .projects-overlay-text {
-    padding: 49px 24px;
+    padding: 49px 24px 77px;
   }
 }
 @media screen and (min-width: 1200px) {
