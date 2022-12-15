@@ -178,13 +178,9 @@ p {
 
 .modal {
   position: absolute;
-  width: 450px;
-  height: 609px;
   top: 50%;
   left: 50%;
   padding: 40px;
-  margin-left: auto;
-  margin-right: auto;
   background: var(--hero-btntext-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -196,6 +192,18 @@ p {
   transition: opacity 300ms var(--animation-timing-function), -webkit-transform 250ms var(--animation-timing-function);
   transition: transform 250ms var(--animation-timing-function), opacity 300ms var(--animation-timing-function);
   transition: transform 250ms var(--animation-timing-function), opacity 300ms var(--animation-timing-function), -webkit-transform 250ms var(--animation-timing-function);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.5);
@@ -227,17 +235,6 @@ p {
 }
 .modal-btn:hover .modal-icon {
   fill: var(--bcg-focus-btn-color);
-}
-@media screen and (max-width: 450px) {
-  .modal {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .modal {
-    width: 528px;
-    height: 581px;
-  }
 }
 
 .modal-title {
@@ -331,7 +328,7 @@ p {
 }
 
 .agreament-text {
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
   -webkit-user-select: none;
@@ -339,6 +336,11 @@ p {
       -ms-user-select: none;
           user-select: none;
   color: var(--text-color);
+}
+@media screen and (min-width: 480px) {
+  .agreament-text {
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .agreament-text {
